@@ -1,0 +1,9 @@
+Lancer rmic : rmic -v1.2 Tchat
+transférer *Stub.class et TchatInterface.class vers la machine cliente
+
+Démarrer rmiregistry :  rmiregistry -J-Djava.security.policy=client.policy&
+
+Lancer le serveur : java TchatServer &
+
+Exécuter le client : java -Djava.security.policy=client.policy TchatRMI
+
